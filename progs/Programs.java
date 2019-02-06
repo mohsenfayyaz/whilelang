@@ -37,4 +37,15 @@ public class Programs {
 					new Skip())),
 			new Print("sum: ", "sum"))));
 
+	public static Statement sample = new Block( new ArrayList<Statement>( Arrays.asList(
+			new Assign("f", new IntLiteral(8)),
+			new While(new GreaterThan(new Var("f"), new IntLiteral(2)),
+					new Block( new ArrayList<Statement>( Arrays.asList(
+							new Print("f = ", "f"),
+							new Assign("f", new Minus( new Var("f"), new IntLiteral(1)))
+					)))),
+			new Print("final f is " , "f"),
+			new Print("final f is f" , "f")
+			)));
+
 }

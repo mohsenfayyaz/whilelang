@@ -25,5 +25,7 @@ class Main {
     	Programs.squares.accept(ip);
     	Programs.collatz.accept(ip);
     	Programs.sums.accept(ip);
+
+    	Programs.sample.accept(ip);
     }
 }
